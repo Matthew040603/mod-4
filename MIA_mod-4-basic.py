@@ -3,11 +3,8 @@ def savings():
     gross_pay = int(input("Gross Pay: "))
     tax_rate = float(input("Current Tax Rate: "))
     expenses = int(input("Expenses: "))
-
     tax_rate /= 100
-
     savings = (gross_pay-round(gross_pay*tax_rate))-expenses
-
     savings *= 100
 
     print("Savings: " + str(savings) + " Centavos")
@@ -19,7 +16,6 @@ def material_waste():
     material_units = str(input("Material Unit (e.g. kg, lbs, etc.): "))
     num_jobs = int(input("Number of Jobs: "))
     job_consumption = int(input("Job Consumption: "))
-
     material_waste = total_material-(num_jobs*job_consumption)
 
     print("Remaining Material: " + str(material_waste) + material_units)
